@@ -18,7 +18,6 @@ public class ATM {
 
         JButton withdrawButton = new JButton("Withdraw");
         withdrawButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 String amountStr = JOptionPane.showInputDialog(frame, "Enter amount to withdraw:");
                 int amount = Integer.parseInt(amountStr);
@@ -32,7 +31,6 @@ public class ATM {
 
         JButton depositButton = new JButton("Deposit");
         depositButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 String amountStr = JOptionPane.showInputDialog(frame, "Enter amount to deposit:");
                 int amount = Integer.parseInt(amountStr);
@@ -43,7 +41,6 @@ public class ATM {
 
         JButton checkBalanceButton = new JButton("Check Balance");
         checkBalanceButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(frame, "Your balance is: " + account.getBalance());
             }
